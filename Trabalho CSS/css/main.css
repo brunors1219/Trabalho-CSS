@@ -1,0 +1,144 @@
+/*Transforma todo o layout*/
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("../img/fundo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item{
+    display: inline;
+}
+.nav-bar{
+    text-align: center;
+    margin: 20px ;
+}
+.nav-link{
+    margin: 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    font-size: 25px;
+    color:white;
+    background-color: rgba(100, 100, 100, 0.0);
+    border-radius: 5px ;
+}
+header{
+    background-color: rgba(50, 50, 50, 0.8);
+    box-shadow: 0px 2px 10px rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#P1{
+    color: white;
+}
+
+#css{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 220px;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.text h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.text h2{
+    font-size: 45px;
+    color: white;
+}
+
+.text p{
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+
+}
+
+/*Centraliza elementos na tela*/
+.center {
+    text-align: center;
+}
+
+/*Centraliza imagens na tela*/
+.image {
+    text-align: center;
+}
+
+/*Faz com que as linhas não colidam entre si*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Faz com que as colunas flutuem à esquerda com distância de 15px*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/*Divide a tela em doze colunas, cada uma representa uma porcentagem diferente da tela.
+Para desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*Fixa o header no topo da página*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Se a tela for menor que 768px*/
+@media only screen and (max-width:768px) {
+    /* Para celulares
+    Faz com que todas as colunas ocupem 100% da tela*/
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/*Faz a imagem da tartaruga desaparecer se a tela for menor que 768px*/
+@media only screen and (max-width:768px) {
+    .hide {
+        display: none;
+    }
+}
+
+/*Se a tela for maior que 600px, a fonte será de 80px*/
+@media only screen and (min-width:600px) {
+    .fonte {
+        font-size: 80px;
+    }
+} 
+
+/*Se a tela for menor que 600px, a fonte será de 30px*/
+@media only screen and (max-width:600px) {
+    .fonte {
+        font-size: 30px;
+    }
+}
